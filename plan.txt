@@ -1,10 +1,10 @@
 Starting June 2022
 Week: 01(12-19)--> Array
-Week: 02(20-26)--> Binary Search, 2D array
-Week: 03(12-19)--> String
+Week: 02(20-26)--> Binary Search/string
+Week: 03(27-04)--> String/sorting/Binary Search
 Week: 04(12-19)--> Recursion
-Week: 05(12-19)--> Linked List
-Week: 06(12-19)--> Stack/heap/Queue
+Week: 05(12-19)--> Recursion/Linked List
+Week: 06(12-19)--> Linked List
 Week: 07(12-19)--> 
 Week: 08(12-19)--> 
 Week: 09(12-19)--> 

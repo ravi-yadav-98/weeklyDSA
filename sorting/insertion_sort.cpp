@@ -20,18 +20,23 @@ void print(string msg, int *arr, int n)
 
 void insertionSort(int *arr, int n)
 {   
-    int minIdx;
-    for(int i=0; i<n-1; i++)
+    
+    for(int i=0; i<n; i++)
     {
-        minIdx = i;
-        for(int j =i+1; j<n; j++)
+        int temp =  arr[i];
+        int j =i-1;
+        for(; j>=0; j--)
         {
-            if(arr[j] < arr[minIdx])
+            if(arr[j] > temp)
             {
-                minIdx = j;
+                //shift
+                arr[j+1] = arr[j];
+            }
+            else{
+                break;
             }
         }
-        swap(arr[i], arr[minIdx]);
+        arr[j+1] = temp;
     }
 }
 int main(void)
