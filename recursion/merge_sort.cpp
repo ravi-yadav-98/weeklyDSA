@@ -28,6 +28,7 @@ void merge(int *arr, int s, int e)
     int index1 =0;
     int index = 0;
     int mainArrayIndex =s;
+    while(index1<len1 && )
 
 
 
