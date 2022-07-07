@@ -4,7 +4,7 @@ Week: 02(20-26)--> Binary Search/string
 Week: 03(27-04)--> String/sorting/Binary Search
 Week: 03(05-11)--> String/sorting/Binary Search
 Week: 04(12-19)--> String/sorting/Binary Search
-Week: 05(12-19)--> Hashing
+Week: 05(12-19)--> 
 Week: 06(12-19)-->
 Week: 07(12-19)-->
 Week: 08(12-19)-->
