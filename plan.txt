@@ -4,9 +4,24 @@ Week: 02(20-26)--> Binary Search/string
 Week: 03(27-04)--> String/sorting/Binary Search
 Week: 03(05-11)--> String/sorting/Binary Search
 Week: 04(12-19)--> String/sorting/Binary Search
-Week: 05(12-19)--> 
-Week: 06(12-19)-->
-Week: 07(12-19)-->
-Week: 08(12-19)-->
-Week: 09(12-19)-->
-Week: 10(12-19)-->
+Week: 05(12-19)--> Math
+Week: 06(12-19)--> Linear Algebra
+Week: 07(12-19)--> Bit Manipulation
+Week: 08(12-19)-->combinatorics
+Week: 09(12-19)-->Probability
+Week: 10(12-19)-->polinomial, series, recurance
+
+
+
+other:
+- Number theory
+- hashing
+- DP
+- Tree
+- Grapgh
+- String Match
+- geometry
+- BST
+- Disjoint set union
+- ternary search
+- 
