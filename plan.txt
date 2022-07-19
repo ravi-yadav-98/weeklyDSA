@@ -3,13 +3,13 @@ Week: 01(12-19)--> Array
 Week: 02(20-26)--> Binary Search/string
 Week: 03(27-04)--> String/sorting/Binary Search
 Week: 03(05-11)--> String/sorting/Binary Search
-Week: 04(12-19)--> String/sorting/Binary Search
-Week: 05(12-19)--> Math
-Week: 06(12-19)--> Linear Algebra
-Week: 07(12-19)--> Bit Manipulation
-Week: 08(12-19)-->combinatorics
-Week: 09(12-19)-->Probability
-Week: 10(12-19)-->polinomial, series, recurance
+Week: 04(12-19)--> Bit Manipulation/Math
+Week: 05(12-19)--> 
+Week: 06(12-19)--> 
+Week: 07(12-19)--> 
+Week: 08(12-19)-->
+Week: 09(12-19)-->
+Week: 10(12-19)-->
 
 
 
@@ -24,4 +24,8 @@ other:
 - BST
 - Disjoint set union
 - ternary search
-- 
+- polinomial, series, recurance
+- Math
+- Linear Algebra
+- combinatorics
+- Probability

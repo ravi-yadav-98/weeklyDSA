@@ -49,8 +49,9 @@ void subSet2(vector<int> &nums, int i, vector<int> temp, vector2d &ans)
             ans.push_back(temp);
             return;
         }
-        
+        //exclude
         subSet2(nums, i+1, temp, ans);
+        //include
         temp.push_back(nums[i]);
         subSet2(nums, i+1, temp, ans);
     }   
