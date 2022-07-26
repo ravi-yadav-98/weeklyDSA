@@ -12,29 +12,29 @@ combinations: 4
 5=1+1+1+1+1
 
 */
-int dp[10010];
-int func(int amount, vector<int> &coins)
+int dp[310][10010];
+int func(int ind, int amount, vector<int> &coins)
 {
-    if(amount == 0){return 0;}
-    int ans = INT_MAX;
+    if(amount == 0){return 1;}
+    if(ind<0) return 0;
 
-    if(dp[amount] != -1)
+    if(dp[ind][amount] != -1)
     {
-        return dp[amount];
+        return dp[ind][amount];
     }
-    for(int coin: coins)
+    int ways =0;
+    for(int coin_amount =0; coin_amount<=amount; coin_amount+=coins[ind])
     {
-        if(amount-coin >= 0)
-            ans = min(ans + 0LL, func(amount-coin, coins)+1LL);
+        ways += func(ind-1,amount-coin_amount, coins);
     }
-    return dp[amount] = ans;
+    return dp[ind][amount] = ways;
 
 }
 int coinChange(vector<int> &coins, int amount)
 {
     memset(dp, -1, sizeof(dp));
-    int ans = func(amount, coins);
-    return ans == INT_MAX ? -1 : ans;
+    int ans = func(coins.size()-1,amount, coins);
+    return ans;
 }
 
 int main(void)
