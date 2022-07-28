@@ -12,53 +12,63 @@ Approah:
 - Linear search or Binary search
 
 */
-
+//nearest integer
 int findSqrt(int x)
 {
-    unsigned long long s =0;
-    unsigned long long l =x;
-
+    long long s =0;
+    long long l =x;
+    long long ans =-1;
     if(x ==1 ){return 1;}
     while(s<=l)
     {
-
-
-        unsigned long long mid = (s+l)/2;
-        // cout<<mid<<endl;
-        // if(mid*mid == x)
-        if(mid*mid ==x)
+        long long mid = s+(l-s)/2;
+        long long sq = mid*mid;
+        
+        if(sq == x)
         {
             return mid;
         }
-
-        else if(mid*mid>x )
+        if(sq<x )
         {
-            // cout<<mid<<" -> "<<(mid-1)*(mid-1)<<endl;
-            if((mid-1)*(mid-1)<x)
-            {
-                return mid-1;
-            }
-            else{
-                l = mid -1;
-            }
+           ans = mid;
+           s = mid+1;
         }
         else
         {
-            s =mid + 1;
+            l = mid - 1;
         }
-        // cout<<s<<" ->> "<<l<<endl;
-
-
-
 
     }
-    return -1;
+    return ans;
+}
+
+//precise solution in form of decimal
+double preciseSqrt(int n, int precision, int intSol)
+{
+    double factor =1;
+    double ans = intSol;
+    for(int i =0; i< precision; i++)
+    {
+        factor = factor/10;
+        for(double j=ans; j*j<n; j=j+factor)
+        {
+             ans = j;
+        }
+    }
+    return ans;
 }
 int main(void)
-{
+{   
     int n;
     cout<<"Enter a number: ";
-    cin>>n;
-    cout<<"Square root: "<<findSqrt(n)<<endl;
+    while(cin>>n)
+    {
+        
+        // cin>>n;
+        int tempSol = findSqrt(n);
+        cout<<"Nearest Int sqrt val: "<<tempSol<<endl;
+        double preciseSol = preciseSqrt(n, 3, tempSol);
+        cout<<"Precise Sqrt Value: "<<preciseSol<<endl;
+    }
   return 0;
 }
