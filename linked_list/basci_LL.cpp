@@ -20,12 +20,10 @@ class Node
         //address
         Node *next;
 
-    public:
-        //constructor
         Node(int val)
         {
-            cout<<"Constructor called"<<endl;
             this->data = val;
+            this->next = NULL;
         }
 
 };
@@ -33,23 +31,30 @@ class Node
 int main(void)
 {
     //create 3 Nodes
-    Node* L1 = new Node(4);
-    Node* L2 = new Node(8);
-    Node* L3 = new Node(12);
+    Node* node1 = new Node(10);
+    Node* node2 = new Node(20);
+    Node* node3 = new Node(30);
 
-    //Links
-    Node *head = L1;
-    L1->next = L2;
-    L2->next = L3;
-    L3->next = NULL;
 
-    //print
+    //head: address of first node
+    Node *head = node1;
+
+    //first node next--> second node address
+    node1->next = node2;
+
+    //second node next--> third node address
+    node2->next = node3;
+
+    //third node next--> null
+
+    //print elements
     Node *ptr = head;
     while(ptr != NULL)
     {
         cout<<ptr->data<<" ";
         ptr = ptr->next;
     }
+
 
 
   return 0;
